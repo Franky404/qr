@@ -3,5 +3,5 @@
 window.KONTER_CONFIG = {
   API_BASE_URL: "https://konter-hgi.vercel.app",
   SUPABASE_URL: "https://iirlmmqsfgzkbvjfacih.supabase.co",
-  SUPABASE_ANON_KEY: "0d4a66d0-9960-4346-b3f3-805f0c38440f"
+  SUPABASE_ANON_KEY: "sb_publishable_puPQc9kI0X9Js74BNYt35w_9zAvhgYE"
 };
