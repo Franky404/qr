@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#090d18">
   <meta name="description" content="Konter Digital — layanan Top Up HGI dengan pilihan nominal 1B, 500M, 200M, dan 100M.">
   <title>Konter Digital — Belanja Mudah</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=6">
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
     .hero-actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
@@ -66,6 +66,42 @@
       .footer { flex-direction:column; align-items:flex-start; gap:15px; }
       .modal-backdrop { padding:10px; }
       .modal { max-height:calc(100dvh - 20px); padding:22px 17px; border-radius:18px; }
+    }
+  </style>
+
+
+  <style id="mobile-full-width-v6">
+    /* Mobile/tablet: gunakan seluruh lebar viewport, bukan lebar kontainer desktop */
+    @media screen and (max-width: 1100px) {
+      html, body { width:100% !important; max-width:100% !important; min-width:0 !important; overflow-x:hidden !important; }
+      body { margin:0 !important; }
+      .wrap, header.topbar.wrap, main.wrap, footer.wrap {
+        width:calc(100% - 32px) !important;
+        max-width:none !important;
+        margin-left:16px !important;
+        margin-right:16px !important;
+      }
+      .topbar { display:flex !important; justify-content:space-between !important; }
+      .hero { display:flex !important; flex-direction:column !important; align-items:stretch !important; min-height:0 !important; padding:34px 0 24px !important; }
+      .hero-copy, .hero-art { width:100% !important; max-width:100% !important; min-width:0 !important; }
+      .hero h1 { font-size:clamp(36px, 8vw, 52px) !important; line-height:1.08 !important; }
+      .hero-copy>p { max-width:100% !important; }
+      .hero-actions { display:grid !important; grid-template-columns:minmax(0,1fr) !important; width:100% !important; }
+      .hero-actions .button { width:100% !important; margin:0 !important; }
+      .hero-art { height:250px !important; margin:14px auto 24px !important; overflow:hidden !important; }
+      .section-head { display:flex !important; flex-direction:column !important; align-items:stretch !important; gap:14px !important; }
+      .search-box { width:100% !important; max-width:100% !important; }
+      .product-grid { display:grid !important; grid-template-columns:repeat(2,minmax(0,1fr)) !important; width:100% !important; }
+      .product-card { min-width:0 !important; padding:13px !important; }
+      .steps { grid-template-columns:minmax(0,1fr) !important; }
+      .footer { display:flex !important; flex-direction:column !important; align-items:flex-start !important; }
+    }
+    @media screen and (max-width:420px) {
+      .wrap, header.topbar.wrap, main.wrap, footer.wrap { width:calc(100% - 28px) !important; margin-left:14px !important; margin-right:14px !important; }
+      .product-grid { grid-template-columns:repeat(2,minmax(0,1fr)) !important; gap:8px !important; }
+      .product-card h3 { font-size:12px !important; }
+      .product-bottom { gap:5px !important; }
+      .product-bottom strong { font-size:12px !important; }
     }
   </style>
 
